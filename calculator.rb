@@ -35,19 +35,30 @@ class Calculator
         self
     end
 
-
-
     def perform(sign, *args)
+    	puts "we are in perform"
         if sign == "*"
-            multiply(args)
+ 			for i in args 
+ 				multiply(i)
+    		end  	
         elsif sign == "/"
-            divide(args)
+        	for i in args 
+        		divide(i)
+        	end 
         elsif sign == "+"
-            add(args)
+        	for i in args 
+        		add(i)
+        	end 
         elsif sign == "-"
-            subtract(args)
+        	for i in args 
+        		subtract(i)
+        	end 
         else
             puts "that is not a valid sign"
         end
+
+        self 
     end
 end
+
+
