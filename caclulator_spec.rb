@@ -2,7 +2,7 @@ require_relative 'calculator'
 
 RSpec.describe Calculator do
 
-	begin
+	before do
 		@calculator = Calculator.new
 	end
 
